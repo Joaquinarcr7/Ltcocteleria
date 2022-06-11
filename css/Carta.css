@@ -1,0 +1,29 @@
+#Carta .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Carta article {
+    margin: 15px;
+}
+#Carta img {
+    width: 100%;
+    max-width: 320px;
+}
+#Carta {
+    background-color: rgb(245, 216, 161);
+}
+#ProductosDestacados .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#ProductosDestacados article{
+    margin: 15px;
+}
+#ProducotosDestacados img {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+}
