@@ -1,29 +1,31 @@
-#Carta .contenedor{
+#Carta .contenedor , #Productos .contenedor , #Preguntas .contenedor{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#Carta article {
+#Carta article , #Productos article , #Preguntas article{
     margin: 15px;
 }
-#Carta img {
+#Carta img , #Productos img ,#Preguntas img {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
 }
-#Carta {
-    background-color: rgb(245, 216, 161);
+#Carta, #Productos , #Preguntas {
+    background-color: rgb(194, 155, 97);
+    text-align: center;
 }
-#ProductosDestacados .contenedor {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#Productos img {
+    border-radius: 50%;
+    border: 5px solid black;
 }
-#ProductosDestacados article{
-    margin: 15px;
+@media (min-width:480px){
+    .Producto{
+        width: 40%;
+    }
 }
-#ProducotosDestacados img {
-    width: 100%;
-    max-width: 320px;
-    height: 320px;
+@media (min-width:1024px){
+    .Producto{
+        width: auto;
+    }
 }

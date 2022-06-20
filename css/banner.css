@@ -25,8 +25,26 @@
     text-decoration: none;
     padding: 10px;
     margin-top: 10px;
-    border: 3px solid rgb(255, 255, 255,0.5);
+    border: 5px solid rgba(255, 0, 0, 0.5);
 }
 #banner a:focus {
     background: rgba(204, 60, 60, 0.2);
+}
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 50px;
+    }
+    #banner a {
+        margin-top: 25px;
+    }
+}
+@media (min-width:768px){
+    #banner {
+        height: 600px;
+        overflow: hidden;
+    }
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
 }
