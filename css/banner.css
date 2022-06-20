@@ -21,6 +21,7 @@
 #banner a{
     display: block;
     width: 100px;
+    background: rgb(194, 155, 97);
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px;
@@ -42,9 +43,60 @@
     #banner {
         height: 600px;
         overflow: hidden;
+        text-align: center;
+    }
+    #banner a{
+        justify-content: center;
     }
     #banner img {
         height: auto;
         margin-top: -100px;
     }
 }
+@-webkit-keyframes rotateInDownLeft {
+    from {
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transform: rotate3d(0, 0, 1, -45deg);
+      transform: rotate3d(0, 0, 1, -45deg);
+      opacity: 0;
+    }
+  
+    to {
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotateInDownLeft {
+    from {
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transform: rotate3d(0, 0, 1, -45deg);
+      transform: rotate3d(0, 0, 1, -45deg);
+      opacity: 0;
+    }
+  
+    to {
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .rotateInDownLeft {
+    -webkit-animation-name: rotateInDownLeft;
+    animation-name: rotateInDownLeft;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
