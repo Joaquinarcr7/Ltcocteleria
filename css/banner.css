@@ -19,7 +19,7 @@
     font-size: 28px;
 }
 #banner a{
-    display: block;
+    display:inline-block;
     width: 100px;
     background: rgb(194, 155, 97);
     color: rgb(255, 255, 255);
