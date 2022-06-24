@@ -3,6 +3,7 @@
 @import url(css/banner.css);
 @import url(css/Carta.css);
 @import url(css/Membresia.css);
+@import url(css/Presupuestos.css);
 
 *{
     margin: 0;
@@ -23,6 +24,8 @@ header{
     left: 0;
     z-index: 100;
 }
+hr {border: 2px solid khaki; height: 2px; background-color: darkkhaki;}
+
 .contenedor {
     width: 98%;
     margin: auto;
